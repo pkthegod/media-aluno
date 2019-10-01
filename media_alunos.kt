@@ -1,7 +1,11 @@
 fun main(){
-	
+	clearscreen()	
+
 	var aluno: Aluno = readAluno()
 	showMedia(aluno)
+}
+private fun clearscreen(){
+	println("\u001b[H\u001b[2J")
 }
 private fun readAluno(): Aluno {
 	println("Digite o nome do aluno: ")
