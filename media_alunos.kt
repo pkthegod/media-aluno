@@ -1,5 +1,3 @@
-import java.util.Scanner
-
 fun main(){
 	
 	var nome: String?
@@ -8,8 +6,6 @@ fun main(){
 	var n3: Double
 	var n4: Double
 	var media: Double
-
-	var reader = Scanner(System.`in`)
 
 	println("Digite o nome do aluno:")
 	nome = readLine()
@@ -23,7 +19,7 @@ fun main(){
 	n4 = readNota()
 	
 	media = (n1+n2+n3+n4)/4
-	println("\nNome: "+nome)
+	println("\nNome: $nome")
 	println("\nMédia: $media")
 }
 private fun readNota(): Double {
