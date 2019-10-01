@@ -10,13 +10,13 @@ private fun clearscreen(){
 private fun readAluno(): Aluno {
 	println("Digite o nome do aluno: ")
 	val nome = readLine()
-	println("Digite o nome do aluno: ")
+	println("Digite a nota 1 : ")
 	val n1 = readNota()
-	println("Digite o nome do aluno: ")
+	println("Digite a nota 2: ")
 	val n2 = readNota()
-	println("Digite o nome do aluno: ")
+	println("Digite a nota 3: ")
 	val n3 = readNota()
-	println("Digite o nome do aluno: ")
+	println("Digite a nota 4: ")
 	val n4 = readNota()
 	return Aluno(nome,n1,n2,n3,n4)
 }
@@ -41,13 +41,13 @@ private fun readNota(): Double {
 		else {
 			return y
 		}
-	} catch (e: NumberFormatEception){
+	} catch (e: NumberFormatException){
 		println("Não foi digitado um número válido, valor = 0.")
 		return 0.0
 	}
 }
 data class Aluno(
-	var nome: String?
+	var nome: String?,
 	var n1: Double = 0.0,
 	var n2: Double = 0.0,
 	var n3: Double = 0.0,
